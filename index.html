@@ -1,30 +1,298 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Automation Development</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Development Portal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #323130;
+        }
+
+        /* Header */
+        .header {
+            background: #0078d4;
+            color: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,.15);
+        }
+
+        .header h1 {
+            font-size: 30px;
+        }
+
+        .header p {
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.08);
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #0078d4;
+            font-weight: 600;
+            margin-right: 20px;
+        }
+
+        .navbar a:hover {
+            color: #005a9e;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1400px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        /* Announcement */
+        .announcement {
+            background: #fff4ce;
+            border-left: 5px solid orange;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+
+        /* Cards */
+        .card-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Status colors */
+        .healthy {
+            color: green;
+            font-weight: bold;
+        }
+
+        .maintenance {
+            color: orange;
+            font-weight: bold;
+        }
+
+        /* Dashboard Tiles */
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .dashboard-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,.08);
+        }
+
+        .dashboard-card h4 {
+            color: #0078d4;
+            margin-bottom: 10px;
+        }
+
+        .dashboard-card p {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            background: white;
+            border-collapse: collapse;
+            margin-top: 15px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,.08);
+        }
+
+        table th {
+            background: #0078d4;
+            color: white;
+            padding: 12px;
+        }
+
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            background: #323130;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0078d4;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #005a9e;
+        }
+    </style>
+
 </head>
 
 <body>
 
-<h1>Automation Development Portal</h1>
+    <div class="header">
+        <h1>🚀 Automation Development Portal</h1>
+        <p>Centralized Hub for Automation Tools, Releases, Support & Feedback</p>
+    </div>
 
-<hr>
+    <div class="navbar">
+        #Home</a>
+        #Tool Status</a>
+        #Releases</a>
+        #Downloads</a>
+        #FAQ</a>
+        #Announcements</a>
+        https://github.com/mehdisayed-uhc/automation_development/issues
+            Raise Concern
+        </a>
+    </div>
 
-index.htmlHome</a> |
-<a hrefatus.htmlTool Status</a> |
-<a href="releasesases</a> |
-<a hrefds.htmlDownloads</a> |
-<a href="AQ</a> |
-<a href="announcements.html">Announcementsact.htmlContact</a>
+    <div class="container">
 
-<hr>
+        <div class="announcement">
+            <strong>📢 Announcement:</strong>
+            Welcome to the Automation Development Portal.
+            All latest releases and updates will be published here.
+        </div>
 
-<h2>Welcome</h2>
+        <h2>Tool Health Dashboard</h2>
 
-<p>
-Centralized portal for all automation tools,
-latest releases, FAQs, announcements and support.
-</p>
+        <div class="dashboard">
+
+            <div class="dashboard-card">
+                <h4>BSAR</h4>
+                <p class="healthy">🟢 Healthy</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h4>CNS</h4>
+                <p class="healthy">🟢 Healthy</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h4>PTS</h4>
+                <p class="maintenance">🟡 Maintenance</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h4>PNDT</h4>
+                <p class="healthy">🟢 Healthy</p>
+            </div>
+
+        </div>
+
+        <br>
+
+        <h2>Quick Actions</h2>
+
+        <div class="card-section">
+
+            <div class="card">
+                <h3>📋 Release Notes</h3>
+                <p>See all deployed versions and changes.</p>
+                #View</a>
+            </div>
+
+            <div class="card">
+                <h3>📥 Downloads</h3>
+                <p>Download latest guides and templates.</p>
+                <a href="#"a>
+            </div>
+
+            <div class="card">
+                <h3>💡 Enhancement Request</h3>
+                <p>Submit improvements and feature ideas.</p>
+                https://github.com/mehdisayed-uhc/automation_development/issues
+                    Submit
+                </a>
+            </div>
+
+        </div>
+
+        <h2>Latest Releases</h2>
+
+        <table>
+
+            <tr>
+                <th>Date</th>
+                <th>Tool</th>
+                <th>Version</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>27-Aug-2026</td>
+                <td>BSAR</td>
+                <td>8.5</td>
+                <td>Released</td>
+            </tr>
+
+            <tr>
+                <td>26-Aug-2026</td>
+                <td>CNS</td>
+                <td>4.2</td>
+                <td>Released</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <footer>
+        Automation Development Portal © 2026
+        <br>
+        Maintained by Mehdi Sayed
+    </footer>
 
 </body>
 </html>
